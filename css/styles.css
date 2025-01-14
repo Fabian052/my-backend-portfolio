@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #00af54;
+  line-height: 1.6;
+}
+
+header {
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 350px;
+  padding: 2rem;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 50;
+}
+
+header .overflow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0.5rem auto 0;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #0a0a0a;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #00af54;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #c1f8dc;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #00af54;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+main section p {
+  line-height: 2;
+}
+
+#skills {
+  padding: 3rem 0;
+}
+
+/*  Animación para el tren de habilidades */
+.skills-track {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #0a0a0a;
+  box-shadow: 0 0 15px #00af54;
+  /* border: 2px 1px solid #00af54; */
+  padding: 1rem 0;
+}
+
+.skills-track ul {
+  display: inline-flex;
+  animation: moveSkills 10s linear infinite;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-track ul li {
+  margin: 0 2rem;
+  font-size: 1.2rem;
+  color: #00ef73;
+}
+
+/*   Animación */
+@keyframes moveSkills {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+h2 {
+  color: #00af54;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0a0a0a;
+  color: #00af54;
+}
+
+footer p {
+  margin: 15px 0;
+}
+
+footer a {
+  color: #00af54;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #c1f8dc;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #00af54;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 725px) {
+  header {
+    height: 400px;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    margin-top: 3rem;
+  }
+
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #00af54;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
