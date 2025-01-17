@@ -10,14 +10,28 @@ const skills = [
 
 const projects = [
   {
-    name: "API de Gestión de Usuarios",
-    description: "Una API RESTful construida con Node.js, Express y MongoDB.",
-    link: "https://github.com/tuusuario/api-gestion-usuarios",
+    name: "Aplicación web para reserva de hoteles",
+    description:
+      "Una API RESTful construida con Node.js y Express para la reserva de hoteles. La aplicación web fue construida con React.js",
+    link: "https://hotels-react-app.netlify.app",
   },
   {
-    name: "Sistema de Autenticación",
-    description: "Servicio de autenticación con JWT y OAuth 2.0.",
-    link: "https://github.com/tuusuario/sistema-autenticacion",
+    name: "API de películas",
+    description:
+      "API útil para la búsqueda películas(Géneros, actores...), construida con Node.js y Express.",
+    link: "https://github.com/Fabian052/movies-app",
+  },
+  {
+    name: "Carrito de compras",
+    description:
+      "Usando js vanilla y local storage. para el inventario de productos.",
+    link: "https://my-first-cart.netlify.app/",
+  },
+  {
+    name: "Landing page para empresa de fachadas",
+    description:
+      "Una landing page para una empresa de fachadas, construida con HTML y CSS.",
+    link: "https://fachadasjr2sas.netlify.app",
   },
 ];
 
@@ -25,7 +39,6 @@ const projects = [
 function loadSkills() {
   const skillsList = document.getElementById("skills-list");
 
-  // const skillsDuplicate = [...skills, ...skills];
   // Uso las habilidades para un efecto de animación
   skills.forEach((skill) => {
     const li = document.createElement("li");
