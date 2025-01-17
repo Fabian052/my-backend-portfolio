@@ -56,7 +56,7 @@ function loadProjects() {
     projectDiv.innerHTML = `
         <h3>${project.name}</h3>
         <p>${project.description}</p>
-        <a href="${project.link}" target="_blank">Ver en GitHub</a>
+        <a href="${project.link}" target="_blank">Ir al sitio</a>
       `;
     projectsContainer.appendChild(projectDiv);
   });
